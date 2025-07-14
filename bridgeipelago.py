@@ -144,7 +144,7 @@ if EnableFlavorDeathlink == "true":
 ## ARCHIPELAGO TRACKER CLIENT + CORE FUNCTION
 class TrackerClient:
     tags: set[str] = {'Tracker', 'DeathLink'}
-    version: dict[str, any] = {"major": 0, "minor": 4, "build": 6, "class": "Version"}
+    version: dict[str, any] = {"major": 0, "minor": 6, "build": 2, "class": "Version"}
     items_handling: int = 0b000  # This client does not receive any items
 
     class MessageCommand(Enum):
