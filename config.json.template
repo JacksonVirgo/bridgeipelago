@@ -1,22 +1,22 @@
 {
     "DiscordConfig": {
-        "DiscordToken": "",
-        "DiscordBroadcastChannel": "",
-        "DiscordAlertUserID": "",
-        "DiscordDebugChannel": ""
+        "DiscordToken": "${DiscordToken}",
+        "DiscordBroadcastChannel": "${DiscordBroadcastChannel}",
+        "DiscordAlertUserID": "${DiscordAlertUserID}",
+        "DiscordDebugChannel": "${DiscordDebugChannel}"
     },
     "ArchipelagoConfig": {
         "ArchipelagoServer": "wss://archipelago.gg",
-        "ArchipelagoPort": 12345,
-        "ArchipelagoPassword": "<your_archipelago_password>",
+        "ArchipelagoPort": ${ArchipelagoPort},
+        "ArchipelagoPassword": "${ArchipelagoPassword}",
         "ArchipelagoBotSlot": "Bridgeipelago",
-        "ArchipelagoTrackerURL": "https://Archipelago.gg/tracker/<customURLhere>",
-        "ArchipelagoServerURL": "https://archipelago.gg/room/<customURLhere>",
+        "ArchipelagoTrackerURL": "${ArchipelagoTrackerURL}",
+        "ArchipelagoServerURL": "${ArchipelagoServerURL}",
         "UniqueID": "1234567890"
     },
     "ItemFilterConfig": {
-        "BotItemSpoilTraps": true,
-        "BotItemFilterLevel": 0
+        "BotItemSpoilTraps": ${BotItemSpoilTraps},
+        "BotItemFilterLevel": ${BotItemFilterLevel}
     },
     "RelayConfig": {
         "ChatMessages": true,
@@ -58,7 +58,7 @@
         "ArchipelagoDataDirectory": "/ArchData/",
         "QueueOverclock": 1,
         "SnoozeCompletedGames": false,
-        "JoinMessage": "<custom join message here>",
+        "JoinMessage": "${JoinMessage}",
         "DebugMode": false,
         "DiscordJoinOnly": false,
         "SelfHostNoWeb": false,

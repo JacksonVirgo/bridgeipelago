@@ -188,9 +188,7 @@ except Exception as e:
     print("!!! Error: " + str(e))
     OverClockValue = 1
 #TO DO - Central Control for bot I'll just leave this in for now.
-#DiscordGuildID = 1171964435741544498
 DiscordGuildID = 1363130850547470336
-
 #Optionaly Load in Meta Modules
 def LoadMetaModules():
     # Load Meta Modules if they are enabled in the config
