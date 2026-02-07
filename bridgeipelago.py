@@ -188,7 +188,7 @@ except Exception as e:
     print("!!! Error: " + str(e))
     OverClockValue = 1
 #TO DO - Central Control for bot I'll just leave this in for now.
-DiscordGuildID = 1171964435741544498
+DiscordGuildID = 648663810772697089
 
 #Optionaly Load in Meta Modules
 def LoadMetaModules():
@@ -201,7 +201,7 @@ class TrackerClient():
     global CoreConfig
     global ConfigLock
     tags: set[str] = {'TextOnly','Tracker', 'DeathLink'}
-    version: dict[str, any] = {"major": 0, "minor": 6, "build": 0, "class": "Version"}
+    version: dict[str, any] = {"major": 0, "minor": 6, "build": 6, "class": "Version"}
     items_handling: int = 0b000  # This client does not receive any items
 
     class MessageCommand(Enum):
