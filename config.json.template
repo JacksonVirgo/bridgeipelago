@@ -15,8 +15,8 @@
         "UniqueID": "1234567890"
     },
     "ItemFilterConfig": {
-        "BotItemSpoilTraps": ${BotItemSpoilTraps},
-        "BotItemFilterLevel": ${BotItemFilterLevel}
+        "BotItemSpoilTraps": false,
+        "BotItemFilterLevel": 2
     },
     "RelayConfig": {
         "ChatMessages": true,
