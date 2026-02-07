@@ -6,7 +6,7 @@
         "DiscordDebugChannel": "${DiscordDebugChannel}"
     },
     "ArchipelagoConfig": {
-        "ArchipelagoServer": "wss://archipelago.gg",
+        "ArchipelagoServer": "${ArchipelagoServer}",
         "ArchipelagoPort": ${ArchipelagoPort},
         "ArchipelagoPassword": "${ArchipelagoPassword}",
         "ArchipelagoBotSlot": "Bridgeipelago",
