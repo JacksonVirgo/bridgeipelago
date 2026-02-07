@@ -7,7 +7,7 @@
     },
     "ArchipelagoConfig": {
         "ArchipelagoServer": "${ArchipelagoServer}",
-        "ArchipelagoPort": ${ArchipelagoPort},
+        "ArchipelagoPort": 42833,
         "ArchipelagoPassword": "${ArchipelagoPassword}",
         "ArchipelagoBotSlot": "Bridgeipelago",
         "ArchipelagoTrackerURL": "${ArchipelagoTrackerURL}",
