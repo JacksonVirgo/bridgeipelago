@@ -4,7 +4,7 @@ WORKDIR /bridgeipelago
 
 RUN git clone https://github.com/Quasky/bridgeipelago.git .
 
-COPY ./run.sh ./run.sh
+COPY ./run.sh .
 RUN chmod +x ./run.sh \
     && sed -i 's/\r$//' ./run.sh
 
