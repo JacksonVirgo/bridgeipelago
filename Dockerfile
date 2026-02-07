@@ -2,6 +2,8 @@ FROM python:3.12
 
 WORKDIR /bridgeipelago
 
+CLONE ./run.sh ./run.sh
+
 RUN git clone https://github.com/Quasky/bridgeipelago.git .
 
 RUN pip install --upgrade pip
