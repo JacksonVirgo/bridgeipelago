@@ -36,3 +36,5 @@ with open(output_file, "w") as f:
 print(f"Generated {output_file} from {input_file} with environment overrides.")
 
 print(data)
+
+print("Fuck man")
