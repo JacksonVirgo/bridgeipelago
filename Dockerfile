@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt
 COPY config.json.template ./config.json
 CMD /bin/sh -c "envsubst < config.json > config.json && python bridgeipelago.py"
 
-CMD ["python", "bridgeipelago.py"]
+CMD ["sh", "-c", "python config.py && python bridgeipelago.py"]
 
