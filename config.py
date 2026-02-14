@@ -1,11 +1,19 @@
 import os
 import json
 
+def parse_env_value(val):
+    try:
+        if '.' in val:
+            return float(val)
+        return int(val)
+    except ValueError:
+        return val
+
 def replace_with_env(obj):
     if isinstance(obj, dict):
         for key, value in obj.items():
             if key in os.environ:
-                obj[key] = os.environ[key]
+                obj[key] = parse_env_value(os.environ[key])
             else:
                 obj[key] = replace_with_env(value)
         return obj
