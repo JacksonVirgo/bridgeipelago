@@ -34,3 +34,5 @@ with open(output_file, "w") as f:
     json.dump(data, f, indent=2)
 
 print(f"Generated {output_file} from {input_file} with environment overrides.")
+
+print(data)
