@@ -667,7 +667,7 @@ async def CheckArchHost():
                 print("Port Check Failed")
                 print(RoomData["last_port"])
                 print(CoreConfig["ArchipelagoConfig"]['ArchipelagoPort'])
-                message = "Port Check Failed.  New port is " + str(RoomData["last_port"]) + "." + str(int(cond)) + " - " + str(CoreConfig["ArchipelagoConfig"]['ArchipelagoPort'])
+                message = "Port Check Failed.  New port is " + str(RoomData["last_port"]) + "."
                 #await MainChannel.send(message)
                 await DebugChannel.send(message)
                 SetConfigVariable("ArchipelagoPort", int(RoomData["last_port"]))
