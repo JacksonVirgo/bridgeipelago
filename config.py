@@ -2,6 +2,9 @@ import os
 import json
 
 def parse_env_value(val):
+    if key_name == "UniqueID":
+        return str(val)
+
     val_lower = val.lower()
     if val_lower == "true":
         return True
