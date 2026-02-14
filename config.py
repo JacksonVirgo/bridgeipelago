@@ -2,18 +2,28 @@ import os
 import json
 
 def parse_env_value(val):
+    val_lower = val.lower()
+    if val_lower == "true":
+        return True
+    elif val_lower == "false":
+        return False
     try:
-        if '.' in val:
-            return float(val)
         return int(val)
     except ValueError:
-        return val
+        pass
+    try:
+        return float(val)
+    except ValueError:
+        pass
+    return val
 
 def replace_with_env(obj):
     if isinstance(obj, dict):
         for key, value in obj.items():
-            if key in os.environ:
-                obj[key] = parse_env_value(os.environ[key])
+            if isinstance(value, str) and value.startswith("${") and value.endswith("}"):
+                env_key = value[2:-1]
+                if env_key in os.environ:
+                    obj[key] = parse_env_value(os.environ[env_key])
             else:
                 obj[key] = replace_with_env(value)
         return obj
@@ -33,8 +43,5 @@ data = replace_with_env(data)
 with open(output_file, "w") as f:
     json.dump(data, f, indent=2)
 
-print(f"Generated {output_file} from {input_file} with environment overrides.")
+print(f"Generated {output_file} from {input_file} with environment overrides. Yay?")
 
-print(data)
-
-print("Fuck man")
