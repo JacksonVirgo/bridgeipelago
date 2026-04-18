@@ -1,0 +1,12 @@
+config.json
+.env
+bridgeipelago/
+.git/
+.gitignore
+.github/
+__pycache__/
+*.py[cod]
+*.egg-info/
+assets/
+docs/
+test/

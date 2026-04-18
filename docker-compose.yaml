@@ -2,6 +2,7 @@ services:
   bridgeipelago:
     build: .
     volumes:
+      - ./config.json:/bridgeipelago/config.json
       - ./bridgeipelago/logs:/bridgeipelago/logs
       - ./bridgeipelago/RegistrationData:/bridgeipelago/RegistrationData
       - ./bridgeipelago/ItemQueue:/bridgeipelago/ItemQueue
